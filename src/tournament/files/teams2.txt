@@ -1,0 +1,64 @@
+Duke
+Bryant
+Texas A&M
+Texas
+Nebraska
+Oklahoma
+URI
+Providence
+Maine
+Vermont
+New Hampshire
+South Carolina
+Clemson
+UNC
+NC State
+Houston
+Rice
+Baylor
+TCU
+Kansas
+Kansas St
+New Mexico St
+New Mexico
+Temple
+Penn State
+Kentucky
+Pitt
+Ohio State
+Cincinatti
+Bowling Green
+Akron
+Toledo
+Northern Illinois
+Syracuse
+Butler
+Auburn
+Indiana
+Wisconsin
+Michigan
+Michigan St
+Purdue
+Minnesota
+Illinois
+Dayton
+Iowa
+Florida
+Florida St
+FAU
+FIU
+UCF
+USF
+Georgia
+Georgia Tech
+Rutgers
+Georgia State
+Tulane
+LSU
+Washington
+Washington State
+Oregon
+Oregon State
+California
+Stanford
+UCLA
