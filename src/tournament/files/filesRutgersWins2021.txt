@@ -1,6 +1,6 @@
-teams2021.txt
-firstfourseeds2021.txt
-RutgersWins.txt
+src/tournament/files/teams2021.txt
+src/tournament/files/firstfourseeds2021.txt
+src/tournament/files/RutgersWins.txt
 
-seedMatchupProb.txt
-roundProb.txt
+src/tournament/files/seedMatchupProb.txt
+src/tournament/files/roundProb.txt
