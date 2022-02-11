@@ -1,5 +1,6 @@
-teams1.txt
-firstFourSeeds1.txt
+SeedNames1.txt
+
 winners1.txt
+
 seedMatchupProb.txt
 roundProb.txt

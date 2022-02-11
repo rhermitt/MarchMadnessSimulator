@@ -68,10 +68,8 @@ public class Bracket {
 		 * teams method to populate the round arrays with games.
 		 */
 		String teamsFile = bobby.nextLine();
-		//teamsFile = "files/".concat(teamsFile);
 		String firstFourSeeds = bobby.nextLine();
 		if(!firstFourSeeds.equals("")) {
-			//firstFourSeeds = "files/".concat(firstFourSeeds);
 			needFirstFour = new ArrayList<Game>(4);
 			fillTeamsFF(teamsFile, firstFourSeeds);
 		}
@@ -83,7 +81,6 @@ public class Bracket {
 		 */
 		winners = new HashMap<String,Integer>();
 		String winnersFile = bobby.nextLine();
-		//winnersFile = "files/".concat(winnersFile);
 		fillWinners(winnersFile);
 		
 		/*Gets the probability that each number of seeds advances in the first
@@ -91,7 +88,6 @@ public class Bracket {
 		numAdvance = new int[8][5];
 		String numAdvanceFile = bobby.nextLine();
 		if(!numAdvanceFile.equals("")) {
-			//numAdvanceFile = "files/".concat(numAdvanceFile);
 			fillNumAdvance(numAdvanceFile);
 		}
 		
@@ -99,7 +95,6 @@ public class Bracket {
 		 * method to populate the 2D array with the probabilities*/
 		matchupProbability = new int[16][16];
 		String matchups = bobby.nextLine();
-		//matchups = "files/".concat(matchups);
 		fillMatchupProb(matchups);
 		
 		/*Gets the seed-round probability file from the filenames file and calls the fillSeedProbability
@@ -107,7 +102,6 @@ public class Bracket {
 		 */
 		seedProbability = new int[16][7];
 		String roundProb = bobby.nextLine();
-		//roundProb = "files/".concat(roundProb);
 		fillSeedProbability(roundProb);
 		bobby.close();
 	}
@@ -357,7 +351,8 @@ public class Bracket {
 	
 	/*Simulates the first round using the probability that each number of a seed
 	 * advances to the second round. Since no statistical analysis is in use,
-	 * random regions are picked for the winners.*/
+	 * random regions are picked for the winners. This method of simulating is
+	 * incompatible with predetermined winners.*/
 	private void simulateFirstRoundNumAdvance() {
 		/*Modifier to add to the game number in the appropriate region
 		 * in the first round array.*/
