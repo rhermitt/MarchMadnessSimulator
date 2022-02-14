@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Locale;
 import java.util.Scanner;
 
 
@@ -23,14 +24,21 @@ public class Simulator {
 		System.out.println(inputMethod);
 
 		int input = Integer.parseInt(inputMethod);
+		System.out.println("Do you want to sim the first round using Number Advance Probability (Enter yes/no)");
+		System.out.println("WARNING: You cannot use predetermined winners if you choose yes: ");
+		String choice = bobby.next();
+		while(!choice.toLowerCase().equals("yes") && !choice.toLowerCase().equals("no")){
+			System.out.print("Please enter yes or no: ");
+			choice = bobby.next();
+		}
+		boolean usingNumAdvance = choice.toLowerCase().equals("yes");
 		if(input == 2){
 			System.out.print("Enter the files file: ");
 			String filesFile = bobby.next();
-			Bracket tournament = new Bracket(filesFile);
+			Bracket tournament = new Bracket(filesFile, usingNumAdvance);
 			tournament.simulateTournament();
 			System.out.println(tournament);
 		}
-		//System.out.println("Enter the file containing the teams: ");
 
 		bobby.close();
 		

@@ -42,6 +42,7 @@ public class Bracket {
 	/*The following 2D Array will contain the probability that each number of seeds
 	 * advances to the next round.*/
 	 private int[][] numAdvance;
+	 private boolean useNumAdv;
 	
 	 
 	/**Constructor - fills the first four games with their teams, if applicable, fills the first round
@@ -55,14 +56,17 @@ public class Bracket {
 	 * First four seeds file should be a blank line if not simulating the first four.
 	 * PRE DETERMINED WINNERS ARE NOT COMPATIBLE WITH THE NUMBER ADVANCE PROBABILTIY
 	 * IF THEY TRY TO BE USED SIMULTANEUOUSLY, THE WINNERS WILL BE IGNORED.
+	 *
+	 * Update: The file is now: teams file, first four seeds (if in use), winners file.
 	 * */
-	public Bracket(String files) throws FileNotFoundException {
+	public Bracket(String files, boolean usingNumAdvance) throws FileNotFoundException {
 		firstFour = new Game[4];
 		firstRound = new Game[32];
 		secondRound = new Game[16];
 		sweetSixteen = new Game[8];
 		eliteEight = new Game[4];
 		finalFour = new Game[2];
+		this.useNumAdv = usingNumAdvance;
 		Scanner bobby = new Scanner(new File(files));
 		/*Gets the team file from the fileNames file and calls the appropriate fill
 		 * teams method to populate the round arrays with games.
@@ -79,30 +83,34 @@ public class Bracket {
 		/*Gets the winners file from the fileNames file and calls the fillWinners method
 		 * to populate the hashMap with the predetermined winners.
 		 */
-		winners = new HashMap<String,Integer>();
-		String winnersFile = bobby.nextLine();
-		fillWinners(winnersFile);
+		winners = new HashMap<String, Integer>();
+		if(!usingNumAdvance) {
+			String winnersFile = bobby.nextLine();
+			if(!winnersFile.equals("")) {
+				fillWinners(winnersFile);
+			}
+		}
 		
 		/*Gets the probability that each number of seeds advances in the first
 		 * round, if in use.*/
-		numAdvance = new int[8][5];
-		String numAdvanceFile = bobby.nextLine();
-		if(!numAdvanceFile.equals("")) {
-			fillNumAdvance(numAdvanceFile);
+		if(usingNumAdvance) {
+			numAdvance = new int[8][5];
+			//String numAdvanceFile = bobby.nextLine();
+			fillNumAdvance("numAdvanceProb.txt");
 		}
-		
+
 		/*Gets the true Matchup probability file from the filenames file and calls the fillMatchupProb
 		 * method to populate the 2D array with the probabilities*/
 		matchupProbability = new int[16][16];
-		String matchups = bobby.nextLine();
-		fillMatchupProb(matchups);
+		//String matchups = bobby.nextLine();
+		fillMatchupProb("seedMatchupProb.txt");
 		
 		/*Gets the seed-round probability file from the filenames file and calls the fillSeedProbability
 		 * method to populate the 2D array with the probabilities.
 		 */
 		seedProbability = new int[16][7];
-		String roundProb = bobby.nextLine();
-		fillSeedProbability(roundProb);
+		//String roundProb = bobby.nextLine();
+		fillSeedProbability("roundProb.txt");
 		bobby.close();
 	}
 	
@@ -269,13 +277,13 @@ public class Bracket {
 		}
 		
 		/*Accounting for the multiple ways to simulate the first round.*/
-		boolean useNumAdvance = false;
-		for(int i=0; i<numAdvance.length; i++) {
-			if(numAdvance[i][0] != 0) {
-				useNumAdvance = true;
-			}
-		}
-		if(useNumAdvance) {
+//		boolean useNumAdvance = false;
+//		for(int i=0; i<numAdvance.length; i++) {
+//			if(numAdvance[i][0] != 0) {
+//				useNumAdvance = true;
+//			}
+//		}
+		if(this.useNumAdv) {
 			simulateFirstRoundNumAdvance();
 		}
 		else {

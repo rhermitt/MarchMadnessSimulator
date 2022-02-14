@@ -1,6 +1,3 @@
 SeedNames1.txt
 
 winners1.txt
-numAdvanceProb.txt
-seedMatchupProb.txt
-roundProb.txt
