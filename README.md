@@ -113,7 +113,7 @@ However, it does ensure that the other National Championship participant (beside
 When you run Simulator.java, you will be prompted for "the files file".
 This is a file containing the teams file and either, neither, or both of the optional First Four Seeds Files and Winners Files.
 
-IMPORTANT: If you choose not to use any or both of the optional files, you must create blank lines on both lines 2 and 3
+IMPORTANT: If you choose not to use either or both of the optional files, you must create blank lines on both lines 2 and 3
 in the files file. This means that your files file should always be 4 lines, even if only the first one has content.
 
 The file should be formatted as follows:
