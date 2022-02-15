@@ -155,7 +155,7 @@ Choose this option by typing "no" when prompted.
 
 **Number Advance Probability** uses historical results of the number of each seed to advance through the first round over the years.
 For each seed 1-8, it uses historical data to choose the number of that seed that will advance, then chooses which regions these
-advancing teams will come from. It then advances the remaining higher seeded teams who's opponents were not chosen to advance.
+advancing teams will come from. It then advances the remaining lower seeded teams who's opponents were not chosen to advance.
 For example: Using historical data, the simulation may determine that three 4-Seeds will advance to the second round.
 It will then randomly choose which three 4-seed teams will advance and move them to the second round. The remaining 4-13 game will have the
 13 seed advance. Note that this method only applies to the first round. Even if you choose Number Advance Probability,
