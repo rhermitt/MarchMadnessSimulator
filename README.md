@@ -1,7 +1,7 @@
 # March Madness Simulator
 Welcome to the NCAA March Madness Bracket Simulator.
 This simulator uses historical probability based on past performances of each seed, along with an element of randomness,
-to predict who will be victorious in each game of the NCAA Men's basketball tournament.
+to predict who will be victorious in each game of the NCAA Men's Basketball Tournament.
 After predicting each game and finally coming up with the winner, the simulator also randomly generates the final score
 of the championship game since the ESPN tournament challenge requires it as a tiebreaker.
 
@@ -10,8 +10,8 @@ of the championship game since the ESPN tournament challenge requires it as a ti
 ## Running a Simulation
 In order to simulate a March Madness Bracket, you will need to create a text file containing the list of the teams in the tournament.
 See below for how this file should be formatted.
-You can also optionally create files that indicate which seeds are participating in the first four (If you are simulating
-a tournament in which the first four is being played) and any predetermined winners you would like to see the simulation guarantee.
+You can also optionally create files that indicate which seeds are participating in the First Four (If you are simulating
+a tournament in which the First Four is being played) and any predetermined winners you would like to see the simulation guarantee.
 You will then need to place these file names into another text file which is passed to the program.
 You can run your simulation by running Simulator.java.
 
@@ -25,13 +25,13 @@ The Teams File contains the names of the teams in the order that they appear in 
 When translating a full March Madness Bracket to a text file, read the matchups from the top left down then from the top right down.
 The Teams File should be formatted with no more than one team per line.
 
-If you are using the first four, then the first 8 teams in the teams file should be the teams competing in the first four.
-The first four games should appear in the order that they are to be filled into the bracket.
-If your simulation includes the first four, insert a blank line wherever there needs to be a team that will be filled by the first four.
+If you are using the First Four, then the first 8 teams in the teams file should be the teams competing in the First Four.
+The First Four games should appear in the order that they are to be filled into the bracket.
+If your simulation includes the First Four, insert a blank line wherever there needs to be a team that will be filled by the First Four.
 
 #### Teams File Example:
 Say you want to simulate the 2021 NCAA Men's Basketball Tournament.
-The 2021 bracket saw the following first four games:
+The 2021 bracket saw the following First Four games:
 * Norfolk State vs. Appalachian State
 * Wichita State vs. Drake
 * Mount Saint Mary's vs. Texas Southern
@@ -56,11 +56,11 @@ The game below that one was Oklahoma vs. Missouri. Thus, the first 12 lines of t
 
 The pattern continues for the rest of the file.
 
-If your simulation does not include the first four, simply transcribe the teams in order, one per line, to make up the teams file.
+If your simulation does not include the First Four, simply transcribe the teams in order, one per line, to make up the teams file.
 
 ---
 ### First Four Seeds File
-If your simulation includes the first four, you must create a text file containing the seeds that the first four winners will occupy.
+If your simulation includes the First Four, you must create a text file containing the seeds that the First Four winners will occupy.
 The file should be one line with the seed numbers separated by spaces.
 
 #### First Four Seeds File Example:
@@ -135,7 +135,7 @@ would be:
 This Files File is included in this project, called "files1.txt"
 
 #### Files File Example - With All Optional Files
-Say you want to simulate the 2021 NCAA Men's Basketball Tournament, which includes the first four, and you want Rutgers
+Say you want to simulate the 2021 NCAA Men's Basketball Tournament, which includes the First Four, and you want Rutgers
 to Win the National Championship. With you properly created files ready, your Files File would look like:
 
 1. teams2021.txt
