@@ -74,7 +74,7 @@ Thus the First Four Seeds File for 2021 is one line containing:
 ### Winners File
 If you want to make sure that your simulation includes specific teams winning up to specific rounds, you can do that by creating a Winners File.
 The Winners File contains a sequence of two-line statements with a team name on top, and a round number on the bottom.
-The team name is the team that will win, and the number is the round number that they are guaranteed to win up to.
+The team name is the team that will win, and the number is the round number that they are guaranteed to win.
 Note that a team is not limited to the round that you set, it is possible that they continue to win games beyond that round.
 The round numbers correspond to the following rounds:
 
