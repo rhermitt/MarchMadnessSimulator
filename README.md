@@ -171,6 +171,6 @@ For the 2021 Tournament:
 ### Getting Your Results
 After choosing your simulation method and entering your Files File, the tournament will automatically
 simulate and display all results to the console. Each game will have its result printed. Each line will contain a full round,
-and games will be in the order that they are contained in the tournament. Your results can then be transferred manually to the
+and games will be in the order that they are contained in the bracket. Your results can then be transferred manually to the
 bracket pool or Tournament Challenge of your choice. Since ESPN Tournament Challenge requires it as a tiebreaker, the simulator
 also displays a final score for the National Championship Game. This is a random score in reasonable range for a College Basketball Game.
