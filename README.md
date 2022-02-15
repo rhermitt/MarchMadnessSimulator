@@ -96,7 +96,7 @@ WARNING: If you select the Number of Teams Advacing Simulation Method, you will 
 
 #### Winners File Example:
 Say you have been watching Rutgers and Gonzaga all season, and you're sure that Rutgers will win the National Championship
-Gonzaga will at least make it through the Sweet Sixteen. In 2021, this is not a problem since Rutgers and Gonzaga were on
+while Gonzaga will at least make it through the Sweet Sixteen. In 2021, this is not a problem since Rutgers and Gonzaga were on
 opposite sides of the bracket. Your Winners File would look like this:
 
 1. Rutgers
