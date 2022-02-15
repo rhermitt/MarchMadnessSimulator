@@ -91,7 +91,7 @@ If you enter a number greater than 6, this will result in that team winning the 
 NOTE: If you choose two teams that play each other to both be winners in a certain round, the program will terminate throwing
 a DoubleWinnerException with a message containing the two teams and the round in conflict.
 
-<font color="red">WARNING:</font> If you select the Number of Teams Advacing Simulation Method, you will be unable to use predetermined winners
+WARNING: If you select the Number of Teams Advacing Simulation Method, you will be unable to use predetermined winners
 (More on this later).
 
 #### Winners File Example:
