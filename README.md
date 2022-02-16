@@ -16,7 +16,7 @@ You will then need to place these file names into another text file which is pas
 You can run your simulation by running Simulator.java.
 
 You also must ensure that the files "numAdvanceProb.txt", "roundProb.txt", and "SeedMatchupProb.txt" are all in the project folder.
-These files drive the simulation and contain the historical probablity that it used to determine the winners.
+These files drive the simulation and contain the historical probablity that it uses to determine the winners.
 
 ---
 
