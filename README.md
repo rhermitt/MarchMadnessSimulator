@@ -37,7 +37,7 @@ The 2021 bracket saw the following First Four games:
 * Mount Saint Mary's vs. Texas Southern
 * Michigan State vs. UCLA
 
-Reading the bracket from the top left down, the winner of Norfolk State vs. Appalachian State is the first first-four game to fill a spot, so it appears first in the Teams File.
+Reading the bracket from the top left down, the winner of Norfolk State vs. Appalachian State is the first First-Four game to fill a spot, so it appears first in the Teams File.
 The rest of the games fill spots in the above order, and thus are listed in that order within the Teams File.
 In 2021, the winner of Norfolk State vs. Appalachian State filled the second spot in the bracket, facing Gonzaga in the first round.
 The game below that one was Oklahoma vs. Missouri. Thus, the first 12 lines of the teams file was:
