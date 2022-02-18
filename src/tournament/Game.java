@@ -21,8 +21,7 @@ public class Game {
 		chances = new ArrayList<Team>(10000);
 	}
 
-	//Use this constructor if the winner is known at the time of creation of the game
-		
+	@Override
 	public String toString() {
 		return "(" + team1 + " " + " vs. " + team2 +  " " + ", Winner: " + winner + ")";
 	}
@@ -40,7 +39,7 @@ public class Game {
 	 * 					6: Championship
 	 * @param matchups - Two-Dimensional Array containing probabilities that
 	 * each seed wins against other seeds.
-	 * @param prob - Two-Dimensional Array containing probabilities for each seed
+	 * @param roundProb - Two-Dimensional Array containing probabilities for each seed
 	 * to win in each round.
 	 */
 	public void simulateGame(int round, int[][] matchups, int[][] roundProb) {

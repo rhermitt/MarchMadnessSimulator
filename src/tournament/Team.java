@@ -12,7 +12,8 @@ class Team {
 		this.teamName = teamName;
 		this.seed = seed;
 	}
-	
+
+	@Override
 	public String toString() {
 		return this.teamName;
 	}

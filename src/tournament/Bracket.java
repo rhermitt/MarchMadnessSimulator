@@ -536,7 +536,8 @@ public class Bracket {
 			championship.simulateGame(6, matchupProbability, seedProbability);
 		}
 	}
-	
+
+	@Override
 	public String toString() { 
 		String tournament = "Round 1: " + roundToString(firstRound) + "\n" +
 			"Round 2: " + roundToString(secondRound) + "\n" + 
@@ -553,13 +554,6 @@ public class Bracket {
 		
 		return tournament;
 	}
-	
-	/*
-	 * private String statsToString(Team team) { String stats = new String("");
-	 * Set<String> keys = team.stats.keySet(); Iterator<String> iterator =
-	 * keys.iterator(); while(iterator.hasNext()) { String stat = iterator.next();
-	 * stats += "(" + stat + ": " + team.stats.get(stat) + ") "; } return stats; }
-	 */
 	
 	private String winnersToString() {
 		String winners = new String("");
@@ -580,13 +574,5 @@ public class Bracket {
 		games += round[round.length-1];
 		return games;
 	}
-	
-//	private String arrayListToString(ArrayList<Game> a) {
-//		String games = new String("");
-//		for(int i=0; i<a.size()-1; i++) {
-//			games += a.get(i) + " ";
-//		}
-//		games += a.get(a.size()-1);
-//		return games;
-//	}
+
 }
