@@ -275,14 +275,7 @@ public class Bracket {
 		if(firstFour[0] != null) {	
 			simulateFirstFour();
 		}
-		
-		/*Accounting for the multiple ways to simulate the first round.*/
-//		boolean useNumAdvance = false;
-//		for(int i=0; i<numAdvance.length; i++) {
-//			if(numAdvance[i][0] != 0) {
-//				useNumAdvance = true;
-//			}
-//		}
+
 		if(this.useNumAdv) {
 			simulateFirstRoundNumAdvance();
 		}
