@@ -1,7 +1,7 @@
 # March Madness Simulator
 Welcome to the NCAA March Madness Bracket Simulator.
 This simulator uses historical probability based on past performances of each seed, along with an element of randomness,
-to predict who will be victorious in each game of the NCAA Men's Basketball Tournament.
+to predict who will be victorious in each game of the NCAA Basketball Tournament.
 After predicting each game and finally coming up with the winner, the simulator also randomly generates the final score
 of the championship game since the ESPN tournament challenge requires it as a tiebreaker.
 
@@ -16,7 +16,7 @@ You will then need to place these file names into another text file which is pas
 You can run your simulation by running Simulator.java.
 
 You also must ensure that the files "numAdvanceProb.txt", "roundProb.txt", and "SeedMatchupProb.txt" are all in the project folder.
-These files drive the simulation and contain the historical probablity that it used to determine the winners.
+These files drive the simulation and contain the historical probablity that it uses to determine the winners.
 
 ---
 
@@ -37,7 +37,7 @@ The 2021 bracket saw the following First Four games:
 * Mount Saint Mary's vs. Texas Southern
 * Michigan State vs. UCLA
 
-Reading the bracket from the top left down, the winner of Norfolk State vs. Appalachian State is the first first-four game to fill a spot, so it appears first in the Teams File.
+Reading the bracket from the top left down, the winner of Norfolk State vs. Appalachian State is the first First-Four game to fill a spot, so it appears first in the Teams File.
 The rest of the games fill spots in the above order, and thus are listed in that order within the Teams File.
 In 2021, the winner of Norfolk State vs. Appalachian State filled the second spot in the bracket, facing Gonzaga in the first round.
 The game below that one was Oklahoma vs. Missouri. Thus, the first 12 lines of the teams file was:
