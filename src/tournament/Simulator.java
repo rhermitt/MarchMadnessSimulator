@@ -20,9 +20,17 @@ public class Simulator {
 		boolean usingNumAdvance = choice.toLowerCase().equals("yes");
 		System.out.print("Enter the files file: ");
 		String filesFile = bobby.next();
-		Bracket tournament = new Bracket(filesFile, usingNumAdvance);
-		tournament.simulateTournament();
-		System.out.println(tournament);
+		try {
+			Bracket tournament = new Bracket(filesFile, usingNumAdvance);
+			tournament.simulateTournament();
+			System.out.println(tournament);
+		}
+		catch (FileNotFoundException e){
+			System.err.println(e.getMessage());
+		}
+		catch (DoubleWinnerException e){
+			System.err.println(e.getMessage());
+		}
 
 		bobby.close();
 		
